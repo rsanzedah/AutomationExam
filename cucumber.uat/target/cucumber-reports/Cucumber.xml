@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="58.950858">
+    <testcase classname="Color Functionality" name="Verify blue" time="48.069556">
+        <system-out>
+            <![CDATA[Given user in page..........................................................passed
+Then user clicks on Set SkyBlue background..................................passed
+Then users page turns blue..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Color Functionality" name="Verify white" time="10.881302">
+        <system-out>
+            <![CDATA[Given users in page.........................................................passed
+Then user clicks on Set white background....................................passed
+Then users page turns white.................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

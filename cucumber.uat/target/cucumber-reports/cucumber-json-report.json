@@ -1,0 +1,105 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Verify blue",
+        "description": "",
+        "id": "color-functionality;verify-blue;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 46920913441,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user in page",
+            "match": {
+              "location": "StepDefintion.user_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 819182394,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on Set SkyBlue background",
+            "match": {
+              "location": "StepDefintion.user_clicks_on_Set_SkyBlue_background()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 326893217,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "users page turns blue",
+            "match": {
+              "location": "StepDefintion.users_page_turns_blue()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Verify white",
+        "description": "",
+        "id": "color-functionality;verify-white;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10442795503,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "users in page",
+            "match": {
+              "location": "StepDefintion.users_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 230855396,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on Set white background",
+            "match": {
+              "location": "StepDefintion.user_clicks_on_Set_white_background()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 207361164,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "users page turns white",
+            "match": {
+              "location": "StepDefintion.users_page_turns_white()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Color Functionality",
+    "description": "",
+    "id": "color-functionality",
+    "keyword": "Feature",
+    "uri": "file:Color.feature",
+    "tags": []
+  }
+]
