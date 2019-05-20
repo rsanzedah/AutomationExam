@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validate Beta Login Page",
+        "description": "",
+        "id": "trial-beta-application-test;validate-beta-login-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9224218626,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens browser",
+            "match": {
+              "location": "loginsteps.user_opens_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56419,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "loginsteps.user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24683,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks signin",
+            "match": {
+              "location": "loginsteps.user_clicks_signin()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23625,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user closes the pop up",
+            "match": {
+              "location": "loginsteps.user_closes_the_pop_up()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Trial BETA application test",
+    "description": "",
+    "id": "trial-beta-application-test",
+    "keyword": "Feature",
+    "uri": "file:trial.feature",
+    "tags": []
+  }
+]

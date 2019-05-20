@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.226697">
+    <testcase classname="Trial BETA application test" name="Validate Beta Login Page" time="9.226697">
+        <system-out>
+            <![CDATA[Given user opens browser....................................................passed
+Then user is on login page..................................................passed
+Then user clicks signin.....................................................passed
+Then user closes the pop up.................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
