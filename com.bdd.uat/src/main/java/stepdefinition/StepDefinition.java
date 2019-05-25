@@ -18,7 +18,8 @@ public class StepDefinition {
 	
 	@Given("user in login page")
 	public void user_in_login_page() {
-		System.setProperty("webdriver.chrome.driver", "\\C:\\SeleniumWebDriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sanzedah Rahman\\git\\AutomationExam\\com.bdd.uat\\resources\\chromedriver.exe");
+		
 		driver=new ChromeDriver();
 		driver.get("http://techfios.com/test/billing/?ng=login/");
 		driver.manage().window().maximize();

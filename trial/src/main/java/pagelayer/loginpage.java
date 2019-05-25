@@ -10,9 +10,9 @@ public class loginpage extends TestBase {
 
 	//locators WEBELEMENTS
 	
-	@FindBy(xpath="//button[@aria-haspopup=\"dialog\" and @id=\"signin-button\"]")
+	@FindBy(xpath="//button[@id=\"signin-button\"]")
 	WebElement signin;
-	@FindBy(xpath="//button[@class=\"sam-ui button primary\" and @type=\"button\" ] ")
+	@FindBy(xpath="//button[@class=\"sam-ui button primary\" and @type=\"button\"] ")
 	WebElement popup;
 	
 	
@@ -25,16 +25,19 @@ public class loginpage extends TestBase {
 	
 	//METHODS/ACTIONS
 	
-	public String validateloginpage() {
-		return driver.getTitle();
+	public  void validateloginpage() {
+		driver.getTitle();
+		
 	}
 	
 	
 		public void tryingtosignin() {
 			signin.click();
+			
+		}
+		public void closealert() {
 			popup.click();
 		}
-		
 		
 			
 		

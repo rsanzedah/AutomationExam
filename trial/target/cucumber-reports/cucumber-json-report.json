@@ -3,6 +3,17 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 38044489,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginsteps.Setup()"
+            }
+          }
+        ],
         "line": 3,
         "name": "Validate Beta Login Page",
         "description": "",
@@ -12,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9224218626,
+              "duration": 9093184172,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 56419,
+              "duration": 42439146,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 24683,
+              "duration": 10174516554,
               "status": "passed"
             },
             "line": 7,
@@ -48,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 23625,
+              "duration": 6079554490,
               "status": "passed"
             },
             "line": 8,

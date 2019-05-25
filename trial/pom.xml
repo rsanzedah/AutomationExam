@@ -24,10 +24,6 @@
         <scope>test</scope>
     </dependency>
    
-   
-   
-      
-   
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
     <dependency>
         <groupId>org.apache.maven.plugins</groupId>
@@ -35,10 +31,7 @@
         <version>3.8.0</version>
     </dependency>
    
-       
-
- 
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+   <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
