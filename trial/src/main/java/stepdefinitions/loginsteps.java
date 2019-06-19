@@ -25,6 +25,7 @@ public class loginsteps extends TestBase{
 	public void user_is_on_login_page() {
 		LoginPage= new loginpage();
 	LoginPage.validateloginpage();
+	
 	//Assert.assertTrue(condition);
 	//Assert.assertTrue(LoginPage.validateloginpage());
 	String actualTitle=driver.getTitle();	
@@ -45,11 +46,18 @@ public class loginsteps extends TestBase{
 	@Then("user closes the pop up")
 	public void user_closes_the_pop_up() throws Throwable {
 		LoginPage.closealert();
+		LoginPage.enteremail();
+		LoginPage.enterpassword();
+		LoginPage.clicknextbutton();
+		String otp=loginpage.getotp("6BSLNLLRH7HLJFMM");
+		LoginPage.enterOtp(otp);
+		LoginPage.clickOtpSubmit();
 		Thread.sleep(5000);
+		LoginPage.clickContinue();
 	
 	
 	
-	driver.close();
+	//driver.close();
 		
 	}
 	
