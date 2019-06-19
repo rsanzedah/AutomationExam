@@ -4,16 +4,19 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import junit.framework.Assert;
+import pagelayer.loginGov;
 import pagelayer.loginpage;
 import util.TestBase;
 	
 
 public class loginsteps extends TestBase{
 	loginpage LoginPage;
+	loginGov LoginGov;
 	
 	@Before
 	public void Setup() {
 		LoginPage = new loginpage();
+		LoginGov=new loginGov();
 	}
 	
 	@Given("user opens browser")
@@ -46,18 +49,19 @@ public class loginsteps extends TestBase{
 	@Then("user closes the pop up")
 	public void user_closes_the_pop_up() throws Throwable {
 		LoginPage.closealert();
-		LoginPage.enteremail();
-		LoginPage.enterpassword();
-		LoginPage.clicknextbutton();
-		String otp=loginpage.getotp("6BSLNLLRH7HLJFMM");
-		LoginPage.enterOtp(otp);
-		LoginPage.clickOtpSubmit();
+		LoginGov=new loginGov();
+		LoginGov.enteremail();
+		LoginGov.enterpassword();
+		LoginGov.clicknextbutton();
+		String otp=LoginGov.getotp("6BSLNLLRH7HLJFMM");
+		LoginGov.enterOtp(otp);
+		LoginGov.clickOtpSubmit();
 		Thread.sleep(5000);
-		LoginPage.clickContinue();
+		LoginGov.clickContinue();
 	
 	
-	
-	//driver.close();
+	Thread.sleep(30);
+	driver.close();
 		
 	}
 	

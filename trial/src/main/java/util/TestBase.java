@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestBase {
@@ -34,15 +35,19 @@ public class TestBase {
 
 	}
 	public static void Initial() {
-		String Browser = prop.getProperty("browser");
+		String Browser = prop.getProperty("browser"); 
+		
+	
 		
 		if(Browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", localdirectory+"\\src\\main\\java\\resources\\chromedriver.exe"); //sourcing from local directory within project
-			driver = new ChromeDriver();
+		driver = new ChromeDriver();
+			 
 		}
 		else if(Browser.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", localdirectory+"\\src\\main\\resources\\geckodriver.exe");//sourcing from local directory within project
 			driver = new FirefoxDriver();
+			  
 		}
 		
 		driver.manage().window().maximize();

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="89.965388">
-<testcase classname="Trial BETA application test" name="Validate Beta Login Page" time="89.965388">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="113.565881">
+<testcase classname="Trial BETA application test" name="Validate Beta Login Page" time="113.565881">
 <system-out><![CDATA[Given user opens browser....................................................passed
 Then user is on login page..................................................passed
 Then user clicks signin.....................................................passed
