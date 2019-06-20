@@ -41,7 +41,14 @@ public class TestBase {
 		
 		if(Browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", localdirectory+"\\src\\main\\java\\resources\\chromedriver.exe"); //sourcing from local directory within project
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
+
+	      ChromeOptions options = new ChromeOptions();
+	      options.setExperimentalOption("useAutomationExtension", false);
+	      driver = new ChromeDriver(options);
+
+	
+	  
 			 
 		}
 		else if(Browser.equalsIgnoreCase("firefox")) {
