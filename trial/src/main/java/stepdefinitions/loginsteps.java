@@ -4,6 +4,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import junit.framework.Assert;
+import pagelayer.homepage;
 import pagelayer.loginGov;
 import pagelayer.loginpage;
 import util.TestBase;
@@ -12,6 +13,7 @@ import util.TestBase;
 public class loginsteps extends TestBase{
 	loginpage LoginPage;
 	loginGov LoginGov;
+	homepage Homepage;
 	
 	@Before
 	public void Setup() {
@@ -49,20 +51,40 @@ public class loginsteps extends TestBase{
 	@Then("user closes the pop up")
 	public void user_closes_the_pop_up() throws Throwable {
 		LoginPage.closealert();
-		LoginGov=new loginGov();
-		LoginGov.enteremail();
-		LoginGov.enterpassword();
-		LoginGov.clicknextbutton();
-		String otp=LoginGov.getotp("6BSLNLLRH7HLJFMM");
-		LoginGov.enterOtp(otp);
-		LoginGov.clickOtpSubmit();
-		Thread.sleep(5000);
-		LoginGov.clickContinue();
+		
+	}
+		
+		@Then("user gets otp")
+		public void user_gets_otp() throws InterruptedException {
+			LoginGov=new loginGov();
+			LoginGov.enteremail();
+			LoginGov.enterpassword();
+			LoginGov.clicknextbutton();
+			String otp=LoginGov.getotp("6BSLNLLRH7HLJFMM");
+			LoginGov.enterOtp(otp);
+			LoginGov.clickOtpSubmit();
+			
+			Thread.sleep(5000);
+		}
+
+		@Then("user is in workspace")
+		public void user_is_in_workspace() throws InterruptedException {
+			LoginGov.clickContinue();
+		}
+
+		@Then("user will click on FH")
+		public void user_will_click_on_FH() throws Exception {
+			Homepage=new homepage();
+			Homepage.getintoFH();
 	
+		   
+		
+
+
 	
 	Thread.sleep(30);
-	driver.close();
+//	driver.close();
 		
 	}
 	
-	}
+}
